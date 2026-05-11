@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPEOLUWA CGPA CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>OPEOLUWA CGPA CALCULATOR</h1>
+            <p>University 5.0 Scale GPA & CGPA Calculator</p>
+
+            <button id="themeBtn">🌙 Dark Mode</button>
+        </header>
+
+        <section class="education-box">
+            <marquee behavior="scroll" direction="left">
+                Education is the passport to the future • Calculate your GPA accurately • Stay focused and achieve academic excellence 🎓
+            </marquee>
+        </section>
+
+        <section class="table-section">
+
+            <table id="courseTable">
+                <thead>
+                    <tr>
+                        <th>Course Title</th>
+                        <th>Course Unit</th>
+                        <th>Grade</th>
+                        <th>Point</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+
+                <tbody id="courseBody">
+
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="CSC 201">
+                        </td>
+
+                        <td>
+                            <input type="number" class="unit" placeholder="3">
+                        </td>
+
+                        <td>
+                            <select class="grade">
+                                <option value="5">A</option>
+                                <option value="4">B</option>
+                                <option value="3">C</option>
+                                <option value="2">D</option>
+                                <option value="1">E</option>
+                                <option value="0">F</option>
+                            </select>
+                        </td>
+
+                        <td class="point">0</td>
+
+                        <td>
+                            <button class="deleteBtn">X</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <div class="buttons">
+                <button id="addCourse">+ Add Course</button>
+                <button id="calculateBtn">Calculate CGPA</button>
+            </div>
+
+        </section>
+
+        <section class="result-box">
+            <h2>Your CGPA</h2>
+            <div id="cgpaResult">0.00</div>
+        </section>
+
+        <section class="tips">
+            <h2>Academic Tips</h2>
+
+            <div class="card">
+                <h3>Study Daily</h3>
+                <p>Consistent reading improves retention and academic performance.</p>
+            </div>
+
+            <div class="card">
+                <h3>Attend Classes</h3>
+                <p>Class participation helps you understand concepts faster.</p>
+            </div>
+
+            <div class="card">
+                <h3>Practice Past Questions</h3>
+                <p>Past questions expose you to exam patterns and boost confidence.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
